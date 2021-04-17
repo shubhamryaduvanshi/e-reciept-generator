@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E- Reciept Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toy-pic">
+
+        </div>
+    <div class="toy-details">
+        <h2>Basic Customer's Info</h2>
+        Customer Name : <input type="text" class="inputfield" id="cname"><br>
+        Mobile No. :<input type="tel" class="inputfield" id="cmob" maxlength="10"><br>
+        Address :<input type="text" class="inputfield" id="caddr"><br>
+        <hr>
+       <h2>Product Details</h2>
+       Toy ID : <input type="text" class="inputfield" id="toyid"><br>
+       Toy Name : <input type="text" class="inputfield" id="toyname"><br>
+       Quantity: <input type="number" class="inputfield" id="toyqty"><br>
+       M.R.P. :<input type="number" class="inputfield" id="toymrp"><br>
+       Discount (%): <input type="number" class="inputfield" id="toydisc"><br><br>
+       <button class="btn" onclick="showdetails()" id="checkout">CheckOut</button>
+       <button class="btn" id="retrivedata"><a href="fetchdata.html">Fetch from Database</a></button>
+    </div>
+    </div>
+    <div id="reciept">
+        <h1>E - Reciept Generator</h1>
+        <p>ABC Store,Thane (W)</p>
+
+        <div id="reciept-content"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<<<<<<< HEAD
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDeCoKGS1yKSj49Mcku1o8hrnpmdCmL6TU",
+          authDomain: "receiptgenerator-73dde.firebaseapp.com",
+          projectId: "receiptgenerator-73dde",
+          storageBucket: "receiptgenerator-73dde.appspot.com",
+          messagingSenderId: "819849118547",
+          appId: "1:819849118547:web:e1c0cbe6324786346717a6",
+          measurementId: "G-CW9Y193Y7N"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+      </script>
+=======
+    
+>>>>>>> 439adb4094606b6bdf189da7ca323e4cc3a7c97f
+    <script src="./script.js"></script>
+</body>
+</html>
